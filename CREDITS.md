@@ -27,3 +27,12 @@ Microsoft's source release excludes commercial packaging, marketing materials, a
 | Node.js v24.18.0 in the separate Windows package | Node.js and its bundled components retain the licenses reproduced in [NODE-LICENSE.txt](licenses/NODE-LICENSE.txt). The Node executable is not part of this source repository. |
 
 The font files remain under the OFL and are not relicensed as MIT. npm installs the build dependencies under their package licenses; `package-lock.json` pins their versions. The `public/licenses/` copies travel with the web build, and the Windows package retains the full runtime notices.
+
+---
+
+## 本项目（zork-3d-lux）致谢与归属
+
+- **本作品基于 Ethan Mollick 的开源项目 https://github.com/emollick/zork-underground-empire 修改**（MIT License）
+- **Zork I 文案与谜题来自 Microsoft 2025 开源的 Zork I 源码**（经该开源项目转译为 3D 冒险）
+- **3D 资产部分由群核科技 Aholo Lux3D 生成**（image_to_3d + SpatialGen world_generate，官方任务号可审计）
+- 交互机制参考：Zork 触屏控制（touch-controls/touch-input）与黑暗系统（darkness.ts）沿用原项目架构（MIT）
