@@ -17,6 +17,9 @@
     "@fontsource/dm-sans": "5.3.0",
     "three": "0.180.0"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "devDependencies": {
     "@types/three": "0.180.0",
     "typescript": "5.9.3",
