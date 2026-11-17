@@ -25,6 +25,8 @@ const cache = new Map<string, THREE.Object3D>()
 
 /** 启动时预加载（幂等）；完成前 makeProp 一律回退程序化。 */
 const ready = (async () => {
+  // 浏览器限定：node:test 环境无 fetch/无网络语义，直接完成（makeProp 走程序化回退）
+  if (typeof fetch !== 'function' || typeof window === 'undefined') return
   const names = [...new Set(Object.values(LUX_PROPS))]
   await Promise.all(
     names.map(
