@@ -57,7 +57,7 @@ export async function loadLuxGlb(name: string, fitSize?: number): Promise<THREE.
 export function disposeLuxGlb(name: string): void {
   const entry = cache.get(name)
   if (!entry) return
-  entry.scene.traverse((object: THREE.Object3D) => {
+  entry.traverse((object: THREE.Object3D) => {
     const mesh = object as THREE.Mesh
     if ((mesh as unknown as { isMesh?: boolean }).isMesh) {
       mesh.geometry.dispose()
