@@ -86,5 +86,15 @@ pointerId 多指角色分配（左半屏摇杆/右半屏视角）+ prefersTouchC
 | 性能 | DC <50 · Tris <320k · FPS 60（守门测试 perf-gate 长期生效） |
 | 首帧 | GLB 全载 <6s（本地 dev；Pages 生产另测） |
 | 资产 | 17 GLB 10.1MB（Meshopt 后）+ PLY 5.45MB + 字体包 |
-| 部署 | Vercel prod READY + GitHub Pages 双轨 |
-| URL | GitHub: https://github.com/JinQiao-at/zork-3d-lux · 部署: https://jinqiao-at.github.io/zork-3d-lux/ |
+| 部署 | Vercel prod READY + GitHub Pages 双轨 + 魔塔创空间（ModelScope，大陆直连推荐） |
+| URL | GitHub（源代码）: https://github.com/JinQiao-at/zork-3d-lux · 在线体验: https://jinqiao-at.github.io/zork-3d-lux/ · Vercel 备: https://zork-3d-lux.vercel.app |
+
+
+## 附：魔塔创空间（ModelScope Studios）部署指引
+
+官方推荐可体验运行链接托管平台。步骤：
+1. 登录 modelscope.cn → 创空间 → 创建（选静态 Nginx 基础模板）
+2. 将 `dist/` 全部产物上传（或 git 集成 zork-3d-lux 仓）
+3. 上线后把创空间公开链接填入提交表单「可体验运行的作品链接」
+
+优势：大陆直连无 DNS 污染，加载速度最优。
