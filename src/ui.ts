@@ -38,10 +38,10 @@ export class GameUI {
     this.root = document.querySelector<HTMLDivElement>('#app')!;
     this.root.innerHTML = `
       <canvas id="world" aria-label="Zork 3D game world" tabindex="0"></canvas>
-      <div class="loading-screen" id="loading"><div class="loading-mark">${icon}</div><p>THE GREAT UNDERGROUND EMPIRE</p><div class="loading-track"><i id="loading-bar"></i></div><span id="loading-label">Preparing your expedition</span></div>
+      <div class="loading-screen" id="loading"><div class="loading-mark">${icon}</div><p>THE LANTERN AND THE HIDDEN DOOR · A16</p><div class="loading-track"><i id="loading-bar"></i></div><span id="loading-label">Preparing your expedition</span></div>
       <div id="title-screen" class="title-screen hidden">
         <div class="title-top"><span class="studio-mark">${icon}</span><span>AN ADVENTURE BELOW THE WORLD</span></div>
-        <div class="title-content"><div class="title-rule"></div><h1>ZORK</h1><p class="title-subtitle">THE GREAT UNDERGROUND EMPIRE</p><p class="title-description">A white house. A brass lantern.<br>An entire world beneath your feet.</p>
+        <div class="title-content"><div class="title-rule"></div><h1>提灯与暗门</h1><p class="title-subtitle">THE LANTERN AND THE HIDDEN DOOR</p><p class="title-description">A white house. A brass lantern.<br>An entire world beneath your feet.<br>雨夜书房 · A16 档案 · Aholo Lux3D 资产</p>
           <div class="title-actions"><button class="primary-button hidden" data-action="continue" id="continue-button">Continue expedition <span>→</span></button><button class="primary-button" data-action="start" id="start-button">Begin expedition <span>↗</span></button><button class="quiet-button" data-action="settings">Settings & controls</button></div>
           <p class="touch-only title-touch-note">Move with the left stick.<br>Swipe the right side to look around.</p>
         </div><div class="title-footer"><span>A FIRST-PERSON ACTION ADVENTURE</span><button data-action="credits">About this adaptation</button><span id="title-input-mode">KEYBOARD + MOUSE</span></div>
